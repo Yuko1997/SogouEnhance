@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SogouTextSectionTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/data_sources" />
+
+        <TextView
+            android:id="@+id/data_ready_count"
+            style="@style/SogouTextMeta"
+            android:background="@drawable/bg_meta_pill"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/badge_waiting" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/SogouWidgetRow"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_icon_tile"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/ic_dictionary" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SogouTextRowTitle"
+                android:text="@string/uud_title" />
+
+            <TextView
+                android:id="@+id/uud_summary"
+                style="@style/SogouTextRowDetail"
+                android:text="@string/uud_not_ready" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/uud_badge"
+            style="@style/SogouTextMeta"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_meta_pill"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:text="@string/badge_waiting" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/SogouWidgetRow"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_icon_tile"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/ic_shortcut" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SogouTextRowTitle"
+                android:text="@string/shortcut_title" />
+
+            <TextView
+                android:id="@+id/shortcut_summary"
+                style="@style/SogouTextRowDetail"
+                android:text="@string/shortcut_not_ready" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/shortcut_badge"
+            style="@style/SogouTextMeta"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_meta_pill"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:text="@string/badge_waiting" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/SogouWidgetRow"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_icon_tile"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/ic_english" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SogouTextRowTitle"
+                android:text="@string/english_title" />
+
+            <TextView
+                android:id="@+id/english_summary"
+                style="@style/SogouTextRowDetail"
+                android:text="@string/english_not_ready" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/english_badge"
+            style="@style/SogouTextMeta"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_meta_pill"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:text="@string/badge_waiting" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="1dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_shield" />
+
+        <TextView
+            style="@style/SogouTextBody"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="@string/privacy_note" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/SogouTextSectionTitle"
+        android:layout_marginTop="26dp"
+        android:text="@string/result_section" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_row"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="1dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_result" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/result_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/result_empty_title"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/result_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/result_empty_detail"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

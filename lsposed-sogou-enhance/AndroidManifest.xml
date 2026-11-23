@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dev.saran.sogouenhance"
+    android:versionCode="6"
+    android:versionName="1.2.1">
+
+    <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="36" />
+
+    <queries>
+        <package android:name="com.sohu.inputmethod.sogou" />
+        <package android:name="com.sohu.inputmethod.sogouoem" />
+    </queries>
+
+    <application
+        android:allowBackup="false"
+        android:description="@string/module_description"
+        android:hasCode="true"
+        android:icon="@drawable/ic_app"
+        android:label="@string/module_name"
+        android:roundIcon="@drawable/ic_app"
+        android:theme="@style/Theme.SogouEnhance">
+
+        <activity
+            android:name=".MigrationActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".MigrationBrokerProvider"
+            android:authorities="dev.saran.sogouenhance.migration"
+            android:exported="true"
+            android:grantUriPermissions="true" />
+    </application>
+</manifest>

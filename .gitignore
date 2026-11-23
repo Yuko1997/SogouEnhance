@@ -1,0 +1,30 @@
+# Complete device backups and restored runtime data can contain accounts,
+# cookies, device identifiers, clipboard history, and user dictionaries.
+/apps/
+/data/
+
+# Extracted APK/DEX inputs and generated reverse-engineering output.
+/analysis/apk-dex/
+/analysis/current-dex/
+/analysis/blur-probe/build/
+/analysis/blur-probe/*.apk
+/analysis/blur-probe/*.apk.idsig
+/analysis/blur-probe/signing/
+
+# User-derived evidence. Keep locally when needed, but do not commit its raw
+# user dictionary, shortcut phrase, or full device capture content.
+/artifacts/backups/
+/artifacts/shortcut/
+/artifacts/uud/*.uud
+/artifacts/toast-*/
+
+# Build outputs and local signing material.
+/lsposed-sogou-enhance/build/
+/lsposed-sogou-enhance/signing/
+/lsposed-sogou-enhance/*.apk
+
+# Editor and operating-system temporary files.
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp

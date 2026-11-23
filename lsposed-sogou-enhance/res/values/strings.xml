@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="module_name">搜狗输入法定制增强</string>
+    <string name="module_description">解除剪贴板限制、补充高斯模糊白名单，并提供官方版到 OEM 版的无 Root 词库迁移。</string>
+    <string name="migration_eyebrow">SOGOU ENHANCE</string>
+    <string name="migration_title">词库迁移</string>
+    <string name="migration_subtitle">把官方版的用户词库、快捷短语和英文词库安全合并到 OEM 版。</string>
+    <string name="migration_route_unknown">官方版 → OEM 版</string>
+    <string name="migration_route_known">官方版 %1$s → OEM %2$s</string>
+    <string name="step_read">1 读取</string>
+    <string name="step_confirm">2 确认</string>
+    <string name="step_commit">3 写入</string>
+
+    <string name="status_idle_title">尚未读取官方版数据</string>
+    <string name="status_idle_detail">从官方版读取数据，所有传输都在本机完成。</string>
+    <string name="status_collecting_title">正在读取官方版</string>
+    <string name="status_collecting_detail">模块正在后台唤醒官方版并导出数据，不需要切换键盘。</string>
+    <string name="status_ready_title">官方版数据已准备</string>
+    <string name="status_ready_detail">核对下面三项统计，然后提交到 OEM 版。</string>
+    <string name="status_migrating_title">正在写入 OEM 版</string>
+    <string name="status_migrating_detail">模块正在后台唤醒 OEM 版并执行合并，不需要切换键盘。</string>
+    <string name="status_queued_title">OEM 引擎仍在完成</string>
+    <string name="status_queued_detail">合并任务已提交，词典文件暂时还没有出现可观察变化。</string>
+    <string name="status_success_title">迁移完成</string>
+    <string name="status_success_detail">OEM 本地词库已完成合并，可以查看下面的迁移结果。</string>
+    <string name="status_partial_title">迁移部分完成</string>
+    <string name="status_partial_detail">词库已写入，但有部分快捷短语未能添加。</string>
+    <string name="status_error_title">迁移未完成</string>
+    <string name="status_error_detail">请查看错误信息后重新读取官方版数据。</string>
+
+    <string name="data_sources">准备情况</string>
+    <string name="data_ready_count">%1$d / 3 项</string>
+    <string name="uud_title">中文用户词库</string>
+    <string name="uud_hint">自动调用官方版 v3new.uud 导出接口</string>
+    <string name="uud_not_ready">尚未读取 · 等待官方版 Hook</string>
+    <string name="uud_ready">%1$s 条 · %2$s · SHA-256 已校验</string>
+    <string name="shortcut_title">快捷短语</string>
+    <string name="shortcut_hint">读取官方版 basephrases_v2.json</string>
+    <string name="shortcut_not_ready">尚未读取 · 等待官方版私有目录</string>
+    <string name="shortcut_ready">%1$d 条有效 · %2$s</string>
+    <string name="english_title">英文用户词库</string>
+    <string name="english_hint">读取 en_un、en_uml、en_ul、en_uel</string>
+    <string name="english_not_ready">尚未读取 · 缺失文件会自动跳过</string>
+    <string name="english_ready">%1$d 个文件 · %2$s</string>
+    <string name="badge_waiting">待读取</string>
+    <string name="badge_collecting">读取中</string>
+    <string name="badge_ready">已读取</string>
+    <string name="badge_partial">部分就绪</string>
+    <string name="privacy_note">数据通过模块私有 ContentProvider 在官方版与 OEM 版进程之间传递，不经过网络，也不写入日志或结果正文。</string>
+
+    <string name="capture_source">读取官方版数据</string>
+    <string name="retry_source">再次读取官方版数据</string>
+    <string name="retry_wake">重新唤醒</string>
+    <string name="submit_migration">提交迁移</string>
+    <string name="open_settings">打开输入法设置</string>
+
+    <string name="result_section">最近结果</string>
+    <string name="result_empty_title">暂无迁移结果</string>
+    <string name="result_empty_detail">完成一次 OEM 迁移后，这里会显示数量、状态与时间。</string>
+    <string name="result_completed_title">最近结果 · %1$s</string>
+    <string name="result_uud">中文词库：%1$s 条</string>
+    <string name="result_english">英文文件：%1$d 个</string>
+    <string name="result_shortcuts">快捷短语：新增 %1$d，已存在 %2$d</string>
+    <string name="result_dictionary_changed">已观察到 sgim_gd_usr.bin 变化</string>
+    <string name="just_now">刚刚</string>
+
+    <string name="confirm_migration_title">确认提交迁移？</string>
+    <string name="confirm_uud">中文用户词库：%1$s 条</string>
+    <string name="confirm_shortcuts">快捷短语：%1$d 条有效</string>
+    <string name="confirm_english">英文用户词库：%1$d 个文件</string>
+    <string name="confirm_backup_note">提交前会创建 OEM 本地备份；现有词条采用合并方式保留。</string>
+    <string name="confirm_trigger_note">提交后模块会在后台唤醒 OEM 版进程。</string>
+    <string name="cancel">取消</string>
+    <string name="creating_source_request">正在准备读取任务…</string>
+    <string name="submitting_task">正在提交到 OEM 版…</string>
+    <string name="wake_source_failed">无法自动唤醒官方版，请打开输入法设置确认它已启用</string>
+    <string name="wake_target_failed">无法自动唤醒 OEM 版，请打开输入法设置确认它已启用</string>
+</resources>
